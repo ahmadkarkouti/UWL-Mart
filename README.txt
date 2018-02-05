@@ -1,7 +1,13 @@
-Ahmad first entry
-Franck first entry
-Dhruva first entry
+#Version 0.1.0
 
-Ahmad Inspiration: https://p.w3layouts.com/demos/june-2016/01-06-2016/big_store/web/index.html
 
-Thanks!
+
+Updates:
+
+-	SQL folder was added to the repository
+-	Including the Html file to construct the fields for the functions
+-	The css file was added to add a basic design to the html script
+-	The javascript createss a database with 1 table "groceries" with the functions of inserting values to it
+
+
+###########################################################################################################################
