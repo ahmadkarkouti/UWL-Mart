@@ -1,12 +1,10 @@
 
-#Version 0.1.3
+#Version 0.1.5
 
 
 ##########################################################################################
 Updates:
 
--	login.html file has been added to the repository.
--	index.html has been updated with a href to the login.html file.
--	stylesheet.css has been updated.
+-	register.html file has been added to the repository.
 
 ##########################################################################################
