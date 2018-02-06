@@ -35,6 +35,8 @@ container is a class in HTML so we add a dot before defining it in CSS */
     overflow:hidden; /*prevents a scrollbar from appearing when a component from the
                      contain goes out of range (hiddes it) */
     
+
+    
 }
 
 .container2
@@ -48,9 +50,43 @@ container is a class in HTML so we add a dot before defining it in CSS */
     
 }
 
+
+
+.containerSlide
+{
+   width: 70%; 
+        /* We set the width into a percentage instead of a fixed width
+        so that the dimensions can adapt to all different screen sizes making it responsive*/
+    margin:auto; /* moves margin to the center */ 
+    overflow:hidden; /*prevents a scrollbar from appearing when a component from the
+                     contain goes out of range (hiddes it) */
+    margin-top: -20px;
+    margin-bottom: -20px;
+
+    
+}
+
+.container3
+{
+    width: 80%; 
+;
+        /* We set the width into a percentage instead of a fixed width
+        so that the dimensions can adapt to all different screen sizes making it responsive*/
+    margin: auto; /* moves margin to the center */ 
+   
+    display: block;
+    overflow:hidden; /*prevents a scrollbar from appearing when a component from the
+                     contain goes out of range (hiddes it) */
+
+    
+
+    
+}
+
+
 ul
 {
-    marging:0;
+  
     padding:0;
     
 }
@@ -188,8 +224,9 @@ header form
     background:url(images/showcase.jpg) no-repeat; /*0 -200px*/
     text-align: center;
     color: #ffffff;
-    /*border-top:#ffb685 2px solid;*/
-    border-bottom:#ffb685 1px solid;
+    border-top:#f5f5f5 1px solid;
+    margin-top: -20px;
+    margin-bottom: -20px;
     
 }
 
@@ -201,14 +238,19 @@ header form
 }
 
 
-/*  SECTION FIVE: NEWSLETTER
+/*  SECTION FIVE: NEWS
  ------------------------------------------------ */
 
 #news
 {
     padding:15px;
     color:#4b4b4b;
-    background:#e9eaea
+    background:#f5f5f5;
+    margin-bottom: -20px;
+    margin-top: -30px;
+    
+    /*border-bottom:#ffb685 1px solid;*/
+        
 }
 
 #news h4
@@ -217,6 +259,15 @@ header form
 
 }
 
+#news h1
+{
+
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    width: 100%;
+    padding: 7px;
+    font-weight: lighter;
+}
 
 
 
@@ -225,7 +276,8 @@ header form
 #Deals
 {
 
-    margin-top: 5px;
+    margin-top: -20px;
+    background:#f5f5f5;
 }
 
 #Deals .deal
@@ -244,6 +296,14 @@ header form
     width:1000px;
     align-items: center;
   
+}
+
+#Deals h1
+{
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+        width: 100%;
+    padding: 15px;
 }
 
 /*  SECTION SIX: SLIDE
@@ -289,5 +349,309 @@ footer
 
 
 /* ------------------------------------------------ */
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/*  SECTION TEN: SLIDE IN OVERLAY
+ ------------------------------------------------ */
+
+.containerOverlay 
+{
+  position: relative;
+  width: 25%;
+  height: auto;
+  
+
+  /*height: 150px;*/
+  /*display: inline-block;*/
+   /*width: 250px;*/
+   /*margin: 0 50px 0 50px;*/
+   
+   float: right;
+   border: #e9eaea 1px solid;
+   
+   
+    
+   
+
+
+}
+
+
+
+.imageOverlay 
+{
+  
+    display: block;
+    height: auto;
+       
+  /*width: 250px;*/
+  width: 100%;
+
+ 
+
+ 
+  
+
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f5f5f5;
+  opacity: 0.9;
+  overflow: hidden;
+  width: 100%;
+  /*width: 250px;*/
+  height: 0;
+  transition: .5s ease;
+}
+
+.containerOverlay:hover .overlay 
+{
+  height: 100%;
+}
+
+.textSlide 
+{
+  color: #000000;
+  font-size: 80%;
+  font-weight: lighter;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*  SECTION ELEVEN: LOGIN
+ ------------------------------------------------ */
+/* in this section, I will be styling the login page' */
+
+/*-- login --*/
+.login-form-grids{
+	width: 45%;
+    padding: 3em;
+	background:#F7F7F9;
+	margin:3em auto 0;
+}
+.login-form-grids input[type="email"],.login-form-grids input[type="password"],.login-form-grids input[type="text"]{
+	outline: none;
+    border: 1px solid #DBDBDB;
+    padding: 10px 10px 10px 45px;
+    font-size: 14px;
+    color: #999;
+    display: block;
+    width: 100%;
+}
+.login-form-grids input[type="email"]{
+	background:url(../images/img-sp.png) no-repeat 5px -182px #fff;
+}
+.login-form-grids input[type="password"]{
+	background:url(../images/img-sp.png) no-repeat 5px -220px #fff;
+	margin:1em 0 0;
+}
+.forgot {
+    margin: 1.5em 0 0;
+}
+.login-form-grids input[type="submit"]{
+	outline: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    display: block;
+    width: 100%;
+    background:#FFC229;
+    margin: 1.5em 0 0;
+}
+.login-form-grids input[type="submit"]:hover{
+	background:#d8703f;
+}
+.login-form-grids ::-webkit-input-placeholder{
+	color:#999;
+}
+.forgot a{
+	color:#212121;
+	font-size:14px;
+	text-decoration:none;
+}
+.forgot a:hover{
+	color:#d8703f;
+}
+.login h4{
+	margin: 2em 0 0.5em;
+    font-size: 1.5em;
+    color: #212121;
+    text-align: center;
+    text-transform: uppercase;
+}
+.login p{
+	font-size:14px;
+	color:#999;
+	line-height:1.8em;
+	margin:0;
+	text-align:center;
+}
+.login p a{
+	color:#d8703f;
+	text-decoration:none;
+	font-size: 1.2em;
+	padding: 0 .5em;
+}
+.login p a:hover{
+	color:#212121;
+}
+.login p a span{
+	top: 0.1em;
+    font-size: .7em;
+    left: 0.3em;
+}
+/*-- //login --*/
+
+/*-- register --*/
+.register h3:before{
+	left:20%;
+}
+.register h3:after{
+	right:20%;
+}
+.login-form-grids h5,.login-form-grids h6{
+	font-size:1em;
+	color:#212121;
+	text-transform:uppercase;
+	margin:0 0 2em;
+}
+.login-form-grids input[type="text"]{
+	background:url(../images/img-sp.png) no-repeat 5px -259px #fff;
+}
+.login-form-grids input[type="text"]:nth-child(2){
+	background:url(../images/img-sp.png) no-repeat 0px -298px #fff;
+	margin:1em 0;
+}
+.register-check-box label{
+	font-size:14px;
+	font-weight:500;
+	color:#999;
+	margin: 1.5em 0 0 0em;
+}
+.checkbox {
+    position: relative;
+	padding-left: 38px !important;
+    cursor: pointer;
+}
+.checkbox i {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+}
+.checkbox input + i:after,.radio input + i:after {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    -ms-transition: opacity 0.1s;
+    -moz-transition: opacity 0.1s;
+    -webkit-transition: opacity 0.1s;
+}
+.checkbox input:checked + i:after,.radio input:checked + i:after{
+    opacity: 1;
+}
+.checkbox input,.radio input {
+    position: absolute;
+    left: -9999px;
+}
+.checkbox input + i:after {
+    content: '';
+    background: url("../images/check.png") no-repeat 1px 2px;
+    top: 0px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    font: normal 12px/16px FontAwesome;
+    text-align: center;
+}
+.login-form-grids h6{
+	margin:3em 0 2em !important;
+}
+.login-form-grids input[type="password"]:nth-child(3) {
+    margin:1em 0;
+}
+.register-home{
+	margin:2em 0 0;
+	text-align:center;
+}
+.register-home a{
+	padding: 8px 45px;
+    background: #9F9F9F;
+	color:#fff;
+	font-size:1em;
+	text-decoration:none;
+}
+.register-home a:hover{
+	background:#d8703f;
+}
 
 
