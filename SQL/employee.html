@@ -1,11 +1,12 @@
-<HTML>
+<!DOCTYPE html>
+<html>
 <head>
     <script type="text/javascript" src="java.js"></script>
     <link rel="stylesheet" href="design.css">
 </head>			
-            
-<h1>Employees Page</h1>
 
+<body>            
+<h1>Employees Page</h1>
 
 <div id="controls">
     <p>Add Some Groceries</p>
@@ -22,20 +23,35 @@
     <input type="text" id="groceriesprice" />
     <br />
     <label>Picture:</label>
-    <input type="text" id="groceriespicture" />
+    <input type="blob" id="groceriestrying" />
+    <br />
     <button type="button" id="addgroceries" onclick="addGroceries();">Add Groceries</button>
-   
-   
-
-  <!--  <input type="button" name='create' onClick="createDatabase()" value='Create Database'>
-    <input type="button" name='create' onClick="createTable()" value='create table'>
-    <input type="button" name='insert' onClick="insertValue()" value='Insert value'>
-    <input type="button" name='select' onClick="outputGroceries();" value='show table'>
-    <input type="file" id="image
-   -->
- 
 </div>
 
+  <input id="inp" type="file">
+<p id="b64"></p>
+<img id="img" height="150">
+
+    <script type="text/javascript">
+        function readFile() {
+  
+  if (this.files && this.files[0]) {
+    
+    var FR= new FileReader();
+    
+    FR.addEventListener("load", function(e) {
+      document.getElementById("img").src       = e.target.result;
+      document.getElementById("b64").value = e.target.result;
+    }); 
+    
+    FR.readAsDataURL( this.files[0] );
+    
+  }
+  
+}
+
+document.getElementById("inp").addEventListener("change", readFile);
+    </script>
 
 <div id="Grocerieslistholder"> 
      <h3>Your Groceries</h3>
@@ -43,4 +59,10 @@
     <ul id="grocerieslist"></ul>
 </div>
 <p><strong>Note: </strong>I can leave this page it should stay saved</p>
-</HTML>
+
+
+</body>
+
+
+
+</html>

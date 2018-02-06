@@ -1,10 +1,11 @@
 
-#Version 0.1.5
+#Version 0.1.6
 
 
 ##########################################################################################
 Updates:
 
--	register.html file has been added to the repository.
+-	employee.html has been modified with a new input to retrieve images
+-	java.js has been modified with the functionality of converting an image into a base64 and being inserted into the database
 
 ##########################################################################################
