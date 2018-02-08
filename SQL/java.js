@@ -1,6 +1,9 @@
+/* exported addGroceries */
+/* exported deleteGroceries */
+
 var mydb;
 var openmydb = function(){
-    mydb = openDatabase("groceries7.db", "0.1", "A Database of UWL MART", 1024 * 1024);
+    mydb = openDatabase("groceries15.db", "0.1", "A Database of UWL MART", 1024 * 1024);
         
     mydb.transaction(function (t) {
         t.executeSql("CREATE TABLE IF NOT EXISTS groceries (id INTEGER PRIMARY KEY ASC, brand TEXT, type TEXT, stock TEXT, price TEXT, trying blob)");
@@ -8,20 +11,39 @@ var openmydb = function(){
 };
 
 openmydb();
-function updateGroceriesList(transaction, results) {
-    var listitems = "";
-    var listholder = document.getElementById("grocerieslist");
-    
-    
-    listholder.innerHTML = "";
 
+
+
+var myimage = "<img src= '";
+function updateGroceriesList(transaction, results) {
+    var listholder = document.getElementById("grocerieslist");
+    //var listholder2 = document.getElementById("grocerieslist3");
     
     var i;
     for (i = 0; i < results.rows.length; i++) {
+        
         var row = results.rows.item(i);
-        listholder.innerHTML += "<li>" + row.brand + " - " + row.type + " - " + row.stock + " - " + row.price + " - " + row.trying + " (<a href='javascript:void(0);' onclick='deleteGroceries(" + row.id + ");'>Delete Groceries</a>)";
+        listholder.innerHTML += "<li>"+ myimage + row.trying + "'" + "<li>" + row.brand + " - " + row.type + " - " + row.stock + " - £" + row.price + " (<a href='javascript:void(0);' onclick='deleteGroceries(" + row.id + ");'>Delete Groceries</a>)";
+        //listholder2.innerHTML += myimage + row.trying + "\'" + " (<a href='javascript:void(0);' onclick='deleteGroceries(" + row.id + ";'></a>";
+       
     }
+ 
+}
 
+
+function updateGroceriesList2(transaction, results) {
+    var listholder = document.getElementById("grocerieslist2");
+    //var listholder2 = document.getElementById("grocerieslist3");
+    
+    var i;
+    for (i = 0; i < results.rows.length; i++) {
+        
+        var row = results.rows.item(i);
+        listholder.innerHTML += "<li>"+ myimage + row.trying + "'" + "<li>" + row.brand + " - " + row.type + " - £" + row.price;
+        //listholder2.innerHTML += myimage + row.trying + "\'" + " (<a href='javascript:void(0);' onclick='deleteGroceries(" + row.id + ";'></a>";
+       
+    }
+ 
 }
 
 
@@ -29,12 +51,15 @@ function updateGroceriesList(transaction, results) {
 function outputGroceries() {
     if (mydb) {
         mydb.transaction(function (t) {
-            t.executeSql("SELECT * FROM groceries", [], updateGroceriesList);
-        });
+            t.executeSql("SELECT * FROM groceries", [], updateGroceriesList);});
+    if (mydb) {
+        mydb.transaction(function (t) {
+            t.executeSql("SELECT * FROM groceries", [], updateGroceriesList2);});
+
     } else {
         alert("db not found, your browser does not support web sql!");
     }
-}
+}}
 
 function addGroceries() {
     if (mydb) {
@@ -67,6 +92,8 @@ function deleteGroceries(id) {
         alert("db not found, your browser does not support web sql!");
     }
 }
+
+
 
 outputGroceries();
 

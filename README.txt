@@ -1,11 +1,11 @@
 
-#Version 0.1.6
+#Version 0.2.0
 
 
 ##########################################################################################
 Updates:
 
--	employee.html has been modified with a new input to retrieve images
--	java.js has been modified with the functionality of converting an image into a base64 and being inserted into the database
+-	groceries.html inside the SQL folder now supports the functionality of viewing the products of the databse
+-	java.js has been modified with the functionality of displaying images within the product
 
 ##########################################################################################
