@@ -61,21 +61,33 @@
                 
                 
                 
-                    <!-- GROUPING CONTENT -->
-                    
-                        <ul> 
-                            <!-- 
-                            In HTML, a menu tab is most commonly made using a
-                            set of unordered lists
-                            -->
-                            <li><a href="index.html" class="fa fa-home"> Home </a></li> 
-                            <li  class="current" ><a href="groceries.html" class="fa fa-cart-arrow-down"> Groceries </a></li> 
-                            <li><a href="clothing.html" class="fa fa-tags"> Clothing </a></li>
-                            <li><a href="account.html" class="fa fa-male"> Your account </a></li>
-                            <li><a href="recycle.html" class="fa fa-refresh w3-spin"></a></li>
                             
-                        </ul>
-                     
+                          <div class="navbar">
+  <a href="index.html" class= "fa fa-home">Home</a>
+  <div class="dropdown">  
+    <button onclick="window.location.href='groceries.html'"  class="dropbtn">GROCERIES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    
+     <div class="dropdown-content">
+      <a href="link1.html">VEGETABLES</a>
+      <a href="2">NONVEGETABLES</a>
+      <a href="3">DRINKS</a>
+    </div>
+    </div>
+    <div class="dropdown">
+    <button onclick="window.location.href='clothing.html'" class="dropbtn">CLOTHING
+      <i class="fa fa-tags"></i>
+    </button> <div class="dropdown-content a">
+      <a href="4">MEN'S</a>
+      <a href="5">WOMEN'S</a>
+      <a href="6">KIDS</a>
+    
+  </div> 
+</div>
+<a href="account.html" class="fa fa-male"> Your account </a>
+<a href="recycle.html" class="fa fa-refresh w3-spin"></a>
+        
                     <!-- end of grouping -->
                     <!--<form>
                         <input  type="text" name="search">
@@ -86,5 +98,153 @@
             <hr />
         </header>    
         
+        
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>GROCERIES</h1>
+<hr>
+
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="window.location.href='groceries.html'"> Show all</button>
+  <button class="btn" onclick="window.location.href='link1.html'"> VEGETABLES</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="images/v1.jpg" alt="Mountains" style="width:100%">
+      <h4>£1.29</h4>
+      <p>carrots</p>
+       <button class="btn active" onclick="window.location.href='basket.html'"> add to cart</button>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="images/v2.jpg" alt="Mountains" style="width:100%">  <h4>£1.29</h4>
+      <p>carrots</p>
+       <button class="btn active" onclick="window.location.href='basket.html'"> add to cart</button>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="images/v3.jpg" alt="Mountains" style="width:100%">  <h4>£1.29</h4>
+      <p>carrots</p>
+       <button class="btn active" onclick="window.location.href='basket.html'"> add to cart</button>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+    <img src="images/v1.jpg" alt="Mountains" style="width:100%">  <h4>£1.29</h4>
+      <p>carrots</p>
+       <button class="btn active" onclick="window.location.href='basket.html'"> add to cart</button>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="images/v1.jpg" alt="Mountains" style="width:100%">  <h4>£1.29</h4>
+      <p>carrots</p>
+       <button class="btn active" onclick="window.location.href='basket.html'"> add to cart</button>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="images/v1.jpg" alt="Mountains" style="width:100%">  <h4>£1.29</h4>
+      <p>carrots</p>
+       <button class="btn active" onclick="window.location.href='basket.html'"> add to cart</button>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+    <img src="images/v1.jpg" alt="Mountains" style="width:100%">  <h4>£1.29</h4>
+      <p>carrots</p>
+       <button class="btn active" onclick="window.location.href='basket.html'"> add to cart</button>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="images/v1.jpg" alt="Mountains" style="width:100%">  <h4>£1.29</h4>
+      <p>carrots</p>
+       <button class="btn active" onclick="window.location.href='basket.html'"> add to cart</button>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="images/v1.jpg" alt="Mountains" style="width:100%"> <h4>£1.29</h4>
+      <p>carrots</p>
+       <button class="btn active" onclick="window.location.href='basket.html'"> add to cart</button>
+    </div>
+    
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+        <div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+  <h2>Auto Sidebar</h2>
+  </div>    
+ </body>    
+</html>
     </body>    
 </html>
