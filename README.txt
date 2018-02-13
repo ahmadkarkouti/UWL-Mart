@@ -1,13 +1,9 @@
-Version 0.2.2
+Version 0.2.3
 
 
 ##########################################################################################
 Updates:
 
--	login.html has been added, left space at the top for the logo.
-	different columns containing the products and the add to cart button
-
-
--	 
+-	Sample cart has been added to be implemented
 
 ##########################################################################################
