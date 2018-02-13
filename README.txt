@@ -1,14 +1,13 @@
-
-#Version 0.2.1
+Version 0.2.2
 
 
 ##########################################################################################
 Updates:
 
--	groceries.html contains a dropdown menu,
+-	login.html has been added, left space at the top for the logo.
 	different columns containing the products and the add to cart button
 
-Working on:
--	side nav bar 
+
+-	 
 
 ##########################################################################################
