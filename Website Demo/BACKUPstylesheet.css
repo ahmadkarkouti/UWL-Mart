@@ -1,0 +1,305 @@
+/*
+            CASCADING STYLE SHEET
+*/
+/* 
+    Created on : 02-Feb-2018, 20:09:57
+    Author     : franck-stephanendamempouli
+*/
+/*  SECTION ONE: BODY
+ ------------------------------------------------ */
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    
+   /* Alternatively == font:15px/1.5 Arial, Helvetica, sans-serif; */
+    padding:0;
+    margin: 0;
+    background-color:#ffffff; /* Hexadecimal for light grey */
+        
+}
+
+/*  SECTION TWO: GENERAL
+ ------------------------------------------------ */
+/* Here we will start dealing with all the conainers. Note thatthe
+container is a class in HTML so we add a dot before defining it in CSS */
+
+.container
+{
+    width: 80%; 
+        /* We set the width into a percentage instead of a fixed width
+        so that the dimensions can adapt to all different screen sizes making it responsive*/
+    margin:auto; /* moves margin to the center */ 
+    overflow:hidden; /*prevents a scrollbar from appearing when a component from the
+                     contain goes out of range (hiddes it) */
+    
+}
+
+.container2
+{
+    width: 100%; 
+        /* We set the width into a percentage instead of a fixed width
+        so that the dimensions can adapt to all different screen sizes making it responsive*/
+    margin:auto; /* moves margin to the center */ 
+    overflow:hidden; /*prevents a scrollbar from appearing when a component from the
+                     contain goes out of range (hiddes it) */
+    
+}
+
+ul
+{
+    marging:0;
+    padding:0;
+    
+}
+
+.button
+{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff;
+    font-weight: bold;
+        
+}
+
+.round {
+    border-radius: 50%;
+}
+
+/*  SECTION THREE: HEADER
+ ------------------------------------------------ */
+header
+{
+    background: #ffffff;
+    color: #000000; /* text color */
+    padding-top: 30px;
+    min-height: 70px; /* adjusts the height */
+
+               
+}
+
+header a
+{
+    color: #000000;
+    text-decoration:none; /* This removes the underline from every link in the menu */
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+
+header li
+{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px; /* TOP RIGHT BOTTOM LEFT */
+}
+
+
+
+/*
+header nav
+{
+    float:right;
+}
+*/
+
+header #brand p
+{
+    margin:0px;
+}
+
+.topNav
+{
+    /*background: #fafafa;*/
+    background: #e9eaea;
+    /*background:url(images/grren.jpg) 50px -100px;*/
+    min-height: 30px; /* adjusts the height */ 
+    border-bottom:#ffb685 1px solid;
+    margin-top: -24px;
+
+    
+}
+
+.topNav li
+{
+    float:right;
+    display:inline; /* removes the bullets */
+    padding: 0px 30px 0px 30px; /* TOP RIGHT BOTTOM LEFT */
+    margin: -8px;
+   
+}
+
+.topNav button
+{
+    float:right;
+    display:inline;
+    padding: 3px 30px 0px 30px; /* TOP RIGHT BOTTOM LEFT */
+   
+}
+
+
+
+/*.topNav button
+{
+    float:right;
+    display:inline;
+    padding: 0 20px 0 20px;
+    margin: 3px;
+   
+}*/
+.topNav a
+{
+    color: #1f6b00;
+    text-decoration: none;
+    font-size: 15px; 
+
+    
+    
+    
+}
+
+.topNav a:hover
+{
+    color:#e8491d;
+    
+
+}
+
+header .highlight, header .current a
+{
+    color:#e8491d;
+    /*font-weight:bold;*/
+        
+}
+
+header a:hover{
+    color:#1f6b00;
+    /* font-weight:bold;*/
+}
+
+header form
+{
+    float: right;
+    margin-top: -65px;
+    
+}
+
+
+/*  SECTION FOUR: SHOWCASE
+ ------------------------------------------------ */
+
+#showcase
+{
+    min-height:400px; /* responsive */
+    background:url(images/showcase.jpg) no-repeat; /*0 -200px*/
+    text-align: center;
+    color: #ffffff;
+    /*border-top:#ffb685 2px solid;*/
+    border-bottom:#ffb685 1px solid;
+    
+}
+
+#showcase h1
+{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+
+/*  SECTION FIVE: NEWSLETTER
+ ------------------------------------------------ */
+
+#news
+{
+    padding:15px;
+    color:#4b4b4b;
+    background:#e9eaea
+}
+
+#news h4
+{
+    float:left;
+
+}
+
+
+
+
+/*  SECTION SIX: DEALS
+ ------------------------------------------------ */
+#Deals
+{
+
+    margin-top: 5px;
+}
+
+#Deals .deal
+{
+   
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    color:#ffffff;
+    background:#35424a
+    
+}
+
+#Deals .deal img
+{
+    width:1000px;
+    align-items: center;
+  
+}
+
+/*  SECTION SIX: SLIDE
+ ------------------------------------------------ */
+#slideShow
+{
+    margin-top: 0;
+}
+.slides1
+{
+    display: none
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+#slideShow .slides1
+{
+   
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    color:#000000;
+    background:#ffffff;
+    
+}
+
+#slideShow .slides1 img
+{
+    width:1000px;
+    align-items: center;
+  
+}
+/*  SECTION SEVEN: FOOTER
+ ------------------------------------------------ */
+footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    color:#ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+/* ------------------------------------------------ */
+
+

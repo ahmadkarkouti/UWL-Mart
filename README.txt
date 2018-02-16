@@ -1,9 +1,9 @@
-Version 0.2.3
+Version 0.3.0
 
 
 ##########################################################################################
 Updates:
 
--	Sample cart has been added to be implemented
+-	A complete demo of the website including the login functionality
 
 ##########################################################################################
