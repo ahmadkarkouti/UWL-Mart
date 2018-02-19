@@ -8,6 +8,7 @@
 /*  SECTION ONE: BODY
  ------------------------------------------------ */
 
+
 body
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -17,9 +18,12 @@ body
    /* Alternatively == font:15px/1.5 Arial, Helvetica, sans-serif; */
     padding:0;
     margin: 0;
-    background-color:#ffffff; /* Hexadecimal for light grey */
+   /* background-color:#ffffff; */ /* Hexadecimal for light grey */
+  /* background-image: url(images/bg.jpg);*/
         
 }
+
+
 
 /*  SECTION TWO: GENERAL
  ------------------------------------------------ */
@@ -39,7 +43,7 @@ container is a class in HTML so we add a dot before defining it in CSS */
     
 }
 
-.container2
+.container4
 {
     width: 100%; 
         /* We set the width into a percentage instead of a fixed width
@@ -77,12 +81,22 @@ container is a class in HTML so we add a dot before defining it in CSS */
     display: block;
     overflow:hidden; /*prevents a scrollbar from appearing when a component from the
                      contain goes out of range (hiddes it) */
-
-    
-
-    
 }
 
+.container4
+{
+    width: 100%; 
+
+        /* We set the width into a percentage instead of a fixed width
+        so that the dimensions can adapt to all different screen sizes making it responsive*/
+    margin: auto; /* moves margin to the center */ 
+    margin-bottom: -20px;
+    
+   
+    display: block;
+    overflow:hidden; /*prevents a scrollbar from appearing when a component from the
+                     contain goes out of range (hiddes it) */
+}
 
 ul
 {
@@ -116,6 +130,7 @@ header
     padding-top: 30px;
     min-height: 70px; /* adjusts the height */
     border-bottom:#0a5e14 1px solid;
+    margin-bottom: -20px;
 
                
 }
@@ -144,6 +159,11 @@ header nav
 }
 */
 
+#brand img
+{
+    width:250px;
+    height:100px;
+}
 header #brand p
 {
     margin:0px;
@@ -157,6 +177,7 @@ header #brand p
     min-height: 30px; /* adjusts the height */ 
     border-bottom:#ffb685 1px solid;
     margin-top: -24px;
+   
 
     
 }
@@ -215,6 +236,7 @@ header form
 }
 
 
+
 /*  SECTION FOUR: SHOWCASE
  ------------------------------------------------ */
 
@@ -225,7 +247,7 @@ header form
     text-align: center;
     color: #ffffff;
     border-top:#f5f5f5 1px solid;
-    margin-top: -20px;
+    margin-top: -50px;
     margin-bottom: -20px;
     
 }
@@ -482,176 +504,318 @@ footer
 
 /*  SECTION ELEVEN: LOGIN
  ------------------------------------------------ */
-/* in this section, I will be styling the login page' */
 
-/*-- login --*/
-.login-form-grids{
-	width: 45%;
-    padding: 3em;
-	background:#F7F7F9;
-	margin:3em auto 0;
+.loginBox
+{
+  
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:  80px 50px;
+    width: 500px;
+    height: 75%;
+    box-sizing: border-box;
+    /*box-sizing: content-box;*/
+    background: rgba(0,0,0,.7)
+        
+        
 }
-.login-form-grids input[type="email"],.login-form-grids input[type="password"],.login-form-grids input[type="text"]{
-	outline: none;
-    border: 1px solid #DBDBDB;
-    padding: 10px 10px 10px 45px;
-    font-size: 14px;
-    color: #999;
-    display: block;
-    width: 100%;
+
+.regBox
+{
+  
+    position: absolute;
+
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:  80px 50px;
+    width: 500px;
+    height: 110%;
+    box-sizing: border-box;
+    /*box-sizing: content-box;*/
+    background: rgba(0,0,0,.7)
+        
+        
 }
-.login-form-grids input[type="email"]{
-	background:url(../images/img-sp.png) no-repeat 5px -182px #fff;
+
+.loginBox img
+{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+           
 }
-.login-form-grids input[type="password"]{
-	background:url(../images/img-sp.png) no-repeat 5px -220px #fff;
-	margin:1em 0 0;
+
+.regBox img
+{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+           
 }
-.forgot {
-    margin: 1.5em 0 0;
-}
-.login-form-grids input[type="submit"]{
-	outline: none;
-    border: none;
-    padding: 10px 0;
-    font-size: 1em;
+
+.loginBox h4
+{
+    margin: 0;
+    padding: 0 0 20px;
     color: #fff;
-    display: block;
-    width: 100%;
-    background:#FFC229;
-    margin: 1.5em 0 0;
-}
-.login-form-grids input[type="submit"]:hover{
-	background:#d8703f;
-}
-.login-form-grids ::-webkit-input-placeholder{
-	color:#999;
-}
-.forgot a{
-	color:#212121;
-	font-size:14px;
-	text-decoration:none;
-}
-.forgot a:hover{
-	color:#d8703f;
-}
-.login h4{
-	margin: 2em 0 0.5em;
-    font-size: 1.5em;
-    color: #212121;
     text-align: center;
-    text-transform: uppercase;
+    font-weight: bold;
 }
-.login p{
-	font-size:14px;
-	color:#999;
-	line-height:1.8em;
-	margin:0;
-	text-align:center;
+.regBox h4
+{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
 }
-.login p a{
-	color:#d8703f;
-	text-decoration:none;
-	font-size: 1.2em;
-	padding: 0 .5em;
-}
-.login p a:hover{
-	color:#212121;
-}
-.login p a span{
-	top: 0.1em;
-    font-size: .7em;
-    left: 0.3em;
-}
-/*-- //login --*/
 
-/*-- register --*/
-.register h3:before{
-	left:20%;
-}
-.register h3:after{
-	right:20%;
-}
-.login-form-grids h5,.login-form-grids h6{
-	font-size:1em;
-	color:#212121;
-	text-transform:uppercase;
-	margin:0 0 2em;
-}
-.login-form-grids input[type="text"]{
-	background:url(../images/img-sp.png) no-repeat 5px -259px #fff;
-}
-.login-form-grids input[type="text"]:nth-child(2){
-	background:url(../images/img-sp.png) no-repeat 0px -298px #fff;
-	margin:1em 0;
-}
-.register-check-box label{
-	font-size:14px;
-	font-weight:500;
-	color:#999;
-	margin: 1.5em 0 0 0em;
-}
-.checkbox {
-    position: relative;
-	padding-left: 38px !important;
-    cursor: pointer;
-}
-.checkbox i {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    display: block;
-    width: 25px;
-    height: 25px;
-    outline: none;
-    border: 2px solid #EDEDED;
-    background: #FFF;
-}
-.checkbox input + i:after,.radio input + i:after {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.1s;
-    -o-transition: opacity 0.1s;
-    -ms-transition: opacity 0.1s;
-    -moz-transition: opacity 0.1s;
-    -webkit-transition: opacity 0.1s;
-}
-.checkbox input:checked + i:after,.radio input:checked + i:after{
-    opacity: 1;
-}
-.checkbox input,.radio input {
-    position: absolute;
-    left: -9999px;
-}
-.checkbox input + i:after {
-    content: '';
-    background: url("../images/check.png") no-repeat 1px 2px;
-    top: 0px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    font: normal 12px/16px FontAwesome;
+.loginBox h6
+{
+    margin: 0;
+    color: #fff;
     text-align: center;
+    
 }
-.login-form-grids h6{
-	margin:3em 0 2em !important;
+
+.regBox h6
+{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    
 }
-.login-form-grids input[type="password"]:nth-child(3) {
-    margin:1em 0;
+.login h1
+{
+
+    margin: 0;
+    padding: 0 0 20px;
+    color: #efed40;
+    text-align: center;
+    
 }
-.register-home{
-	margin:2em 0 0;
-	text-align:center;
+
+.loginBox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    
 }
-.register-home a{
-	padding: 8px 45px;
-    background: #9F9F9F;
-	color:#fff;
-	font-size:1em;
-	text-decoration:none;
+
+.regBox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    
 }
-.register-home a:hover{
-	background:#d8703f;
+
+.loginBox input[type="email"],
+.loginBox input[type="password"],
+.loginBox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 20px;
 }
+
+.regBox input[type="email"],
+.regBox input[type="password"],
+.regBox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+
+::placeholder
+{
+    
+    color: rgba(255,255,255,.5);
+    
+}
+
+.loginBox input[type="button"]
+{
+    
+    border: none;
+    outline: none;
+    height: 40px;
+    color:#ffffff;
+    font-size: 16px;
+    background: #e8491d;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.regBox input[type="button"]
+{
+    
+    border: none;
+    outline: none;
+    height: 40px;
+    color:#ffffff;
+    font-size: 16px;
+    background: #e8491d;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+
+.loginBox input[type="button"]:hover
+{
+    background: #fff;
+    color: #000
+}
+
+.regBox input[type="button"]:hover
+{
+    background: #fff;
+    color: #000
+}
+
+.loginBox a
+{
+    
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    /*padding: 0 105px 0 105px;*/
+    margin-left: 130px;
+ 
+  
+}
+
+
+.regBox a
+{
+    
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    /*padding: 0 105px 0 105px;*/
+    margin-left: 153px;
+ 
+  
+}
+
+.loginBox a:hover
+{
+    color: #e8491d;
+}
+
+.regBox a:hover
+{
+    color: #e8491d;
+}
+
+
+/*
+MEMNBERS
+-=----------
+*/
+
+.card 
+{
+    
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    padding-left: 2px;
+    align-content: center;
+    margin: auto; /* moves margin to the center */ 
+   
+    display: block;
+
+   
+}
+
+.column img
+{
+    width: 100%;
+}
+
+
+.menuWrap a
+{
+  
+    margin-top: -200px;
+    
+    
+}
+
+.openbtn
+{
+    visibility: hidden;
+}
+
+.closebtn
+{
+    visibility: hidden;
+}
+
+.openbtn2
+{
+    margin-bottom: 34px;
+    margin-top: 43px;
+    color: #ff0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
