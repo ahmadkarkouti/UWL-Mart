@@ -1,0 +1,220 @@
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+
+
+/* Style the tab */
+.tab {
+    float: left;
+
+    background-color: #fff;
+    width: 15%;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    background-color: #fff;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: orange;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    color: green;
+}
+/* Style the tab content */
+.tabcontent{
+    float: left;
+    padding: 0px 12px;
+    
+    width: 80%;
+
+    border-top: none;
+    border-bottom:none;
+    border-right: none;
+    
+    border-left: 1px solid #ccc;
+    height: auto;
+    background-color: #F8F8F8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 70px;
+
+}
+
+#empButton
+{
+    background-color: #db9004;
+    border:none;
+    color: white;
+    padding:15px 32px;
+    float: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+}
+
+#empButton:hover
+{
+    background-color: #6d4905;
+    cursor: pointer;
+
+
+}
+#inp
+{
+        background-color: #515d70;
+    border:none;
+    color: white;
+    padding:15px 32px;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#img
+{
+    
+    margin-left: 40%;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 5px;
+    }
+
+td, th{
+    /*border: 1px solid #dddddd;*/
+    text-align: center;
+    padding: 8px;
+    text-align: left;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+th
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    background-color: #515d70;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+
+}
+tr:nth-child(odd) {
+    background-color: #fff;
+
+}
+
+#ordButton
+{
+
+    background-color: #4bd134;
+    border:none;
+    color: white;
+    padding:15px 32px;
+    float: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-left: 4px solid #0c5100;
+    border-right: 4px solid #0c5100;
+
+    
+   
+}
+
+#ordButton:hover
+{ 
+    background-color: #0c5100;
+
+
+}
+
+#total
+{
+    background-color: #fff;
+    border:1px solid #ccc;
+    color: black;
+    padding:15px 32px;
+    float: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    float: right;
+    width: 100%;
+}
+
+#baskCont
+{
+    background-color: rgba(0,0,0,0.5); 
+    width: 70%; 
+    margin-top: 40px; 
+    border-radius: 5px;
+}
+
+#accImg
+{
+    float: right;
+}
+
+#Marketing
+{
+    display:block;
+}
+
+#chartContainer
+{
+    height: 370px; width: 100%; margin-right: 100px; position: relative;
+}
+
+#chartContainer2
+{
+    height: 370px; width: 100%; position: relative;
+}

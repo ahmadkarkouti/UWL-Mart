@@ -1,0 +1,719 @@
+/*
+            CASCADING STYLE SHEET
+*/
+/* 
+    Created on : 02-Feb-2018, 20:09:57
+    Author     : franck-stephanendamempouli
+*/
+/*  SECTION ONE: BODY
+ ------------------------------------------------ */
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    
+   /* Alternatively == font:15px/1.5 Arial, Helvetica, sans-serif; */
+    padding:0;
+    margin: 0;
+   /* background-color:#ffffff; */ /* Hexadecimal for light grey */
+  /* background-image: url(images/bg.jpg);*/
+        
+}
+
+
+
+/*  SECTION TWO: GENERAL
+ ------------------------------------------------ */
+/* Here we will start dealing with all the conainers. Note thatthe
+container is a class in HTML so we add a dot before defining it in CSS */
+
+.container
+{
+    width: 80%; 
+        /* We set the width into a percentage instead of a fixed width
+        so that the dimensions can adapt to all different screen sizes making it responsive*/
+    margin:auto; /* moves margin to the center */ 
+    overflow:hidden; /*prevents a scrollbar from appearing when a component from the
+                     contain goes out of range (hiddes it) */
+    
+
+    
+}
+
+.container2
+{
+    width: 100%; 
+        /* We set the width into a percentage instead of a fixed width
+        so that the dimensions can adapt to all different screen sizes making it responsive*/
+    margin:auto; /* moves margin to the center */ 
+    overflow:hidden; /*prevents a scrollbar from appearing when a component from the
+                     contain goes out of range (hiddes it) */
+    
+}
+
+
+
+.containerSlide
+{
+   width: 70%; 
+        /* We set the width into a percentage instead of a fixed width
+        so that the dimensions can adapt to all different screen sizes making it responsive*/
+    margin:auto; /* moves margin to the center */ 
+    overflow:hidden; /*prevents a scrollbar from appearing when a component from the
+                     contain goes out of range (hiddes it) */
+    margin-top: -20px;
+    margin-bottom: -20px;
+
+    
+}
+
+.container3
+{
+    width: 80%; 
+;
+        /* We set the width into a percentage instead of a fixed width
+        so that the dimensions can adapt to all different screen sizes making it responsive*/
+    margin: auto; /* moves margin to the center */ 
+   
+    display: block;
+    overflow:hidden; /*prevents a scrollbar from appearing when a component from the
+                     contain goes out of range (hiddes it) */
+
+    
+
+    
+}
+
+
+ul
+{
+  
+    padding:0;
+    
+}
+
+.button
+{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff;
+    font-weight: bold;
+        
+}
+
+.round {
+    border-radius: 50%;
+}
+
+/*  SECTION THREE: HEADER
+ ------------------------------------------------ */
+header
+{
+    background: #ffffff;
+    color: #000000; /* text color */
+    padding-top: 30px;
+    min-height: 70px; /* adjusts the height */
+
+
+               
+}
+
+header a
+{
+    color: #000000;
+    text-decoration:none; /* This removes the underline from every link in the menu */
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+
+header li
+{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px; /* TOP RIGHT BOTTOM LEFT */
+}
+
+/*
+header nav
+{
+    float:right;
+}
+*/
+
+header #brand p
+{
+    margin:0px;
+}
+
+.topNav
+{
+    /*background: #fafafa;*/
+    background: #e9eaea;
+    /*background:url(images/grren.jpg) 50px -100px;*/
+    min-height: 30px; /* adjusts the height */ 
+    border-bottom:#ffb685 1px solid;
+    margin-top: -24px;
+
+    
+}
+
+.topNav li
+{
+    float:right;
+    display:inline; /* removes the bullets */
+    padding: 0px 30px 0px 30px; /* TOP RIGHT BOTTOM LEFT */
+    margin: -8px;
+   
+}
+
+.topNav button
+{
+    float:right;
+    display:inline; /* removes the bullets */
+    padding: 0 20px 0 20px; /* TOP RIGHT BOTTOM LEFT */
+    margin: 3px;
+   
+}
+.topNav a
+{
+    color: #1f6b00;
+    text-decoration: none;
+    font-size: 15px; 
+
+    
+    
+    
+}
+
+.topNav a:hover
+{
+    color:#e8491d;
+    
+
+}
+header .highlight, header .current a
+{
+    color:#e8491d;
+    /*font-weight:bold;*/
+        
+}
+
+header a:hover{
+    color:#1f6b00;
+    /* font-weight:bold;*/
+}
+
+header form
+{
+    float: right;
+    margin-top: -65px;
+    
+}
+
+
+/*  SECTION FOUR: SHOWCASE
+ ------------------------------------------------ */
+
+#showcase
+{
+    min-height:400px; /* responsive */
+    background:url(images/showcase.jpg) no-repeat; /*0 -200px*/
+    text-align: center;
+    color: #ffffff;
+    border-top:#f5f5f5 1px solid;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    
+}
+
+#showcase h1
+{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+
+/*  SECTION FIVE: NEWS
+ ------------------------------------------------ */
+
+#news
+{
+    padding:15px;
+    color:#4b4b4b;
+    background:#f5f5f5;
+    margin-bottom: -20px;
+    margin-top: -30px;
+    
+    /*border-bottom:#ffb685 1px solid;*/
+        
+}
+
+#news h4
+{
+    float:left;
+
+}
+
+#news h1
+{
+
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    width: 100%;
+    padding: 7px;
+    font-weight: lighter;
+}
+
+
+
+/*  SECTION SIX: DEALS
+ ------------------------------------------------ */
+#Deals
+{
+
+    margin-top: -20px;
+    background:#f5f5f5;
+}
+
+#Deals .deal
+{
+   
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    color:#ffffff;
+    background:#35424a
+    
+}
+
+#Deals .deal img
+{
+    width:1000px;
+    align-items: center;
+  
+}
+
+#Deals h1
+{
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+        width: 100%;
+    padding: 15px;
+}
+
+/*  SECTION SIX: SLIDE
+ ------------------------------------------------ */
+#slideShow
+{
+    margin-top: 0;
+}
+.slides1
+{
+    display: none
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+#slideShow .slides1
+{
+   
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    color:#000000;
+    background:#ffffff;
+    
+}
+
+#slideShow .slides1 img
+{
+    width:1000px;
+    align-items: center;
+  
+}
+/*  SECTION SEVEN: FOOTER
+ ------------------------------------------------ */
+footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    color:#ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+/* ------------------------------------------------ */
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/*  SECTION TEN: SLIDE IN OVERLAY
+ ------------------------------------------------ */
+
+.containerOverlay 
+{
+  position: relative;
+  width: 25%;
+  height: auto;
+  
+
+  /*height: 150px;*/
+  /*display: inline-block;*/
+   /*width: 250px;*/
+   /*margin: 0 50px 0 50px;*/
+   
+   float: right;
+   border: #e9eaea 1px solid;
+   
+   
+    
+   
+
+
+}
+
+
+
+.imageOverlay 
+{
+  
+    display: block;
+    height: auto;
+       
+  /*width: 250px;*/
+  width: 100%;
+
+ 
+
+ 
+  
+
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f5f5f5;
+  opacity: 0.9;
+  overflow: hidden;
+  width: 100%;
+  /*width: 250px;*/
+  height: 0;
+  transition: .5s ease;
+}
+
+.containerOverlay:hover .overlay 
+{
+  height: 100%;
+}
+
+.textSlide 
+{
+  color: #000000;
+  font-size: 80%;
+  font-weight: lighter;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*  SECTION ELEVEN: LOGIN
+ ------------------------------------------------ */
+
+.loginBox
+{
+  
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:  80px 50px;
+    width: 500px;
+    height: 75%;
+    box-sizing: border-box;
+    /*box-sizing: content-box;*/
+    background: rgba(0,0,0,.7)
+        
+        
+}
+
+.regBox
+{
+  
+    position: absolute;
+
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:  80px 50px;
+    width: 500px;
+    height: 110%;
+    box-sizing: border-box;
+    /*box-sizing: content-box;*/
+    background: rgba(0,0,0,.7)
+        
+        
+}
+
+.loginBox img
+{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+           
+}
+
+.regBox img
+{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+           
+}
+
+.loginBox h4
+{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.regBox h4
+{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.loginBox h6
+{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.regBox h6
+{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    
+}
+.login h1
+{
+
+    margin: 0;
+    padding: 0 0 20px;
+    color: #efed40;
+    text-align: center;
+    
+}
+
+.loginBox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.regBox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.loginBox input[type="email"],
+.loginBox input[type="password"],
+.loginBox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.regBox input[type="email"],
+.regBox input[type="password"],
+.regBox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+
+::placeholder
+{
+    
+    color: rgba(255,255,255,.5);
+    
+}
+
+.loginBox input[type="submit"]
+{
+    
+    border: none;
+    outline: none;
+    height: 40px;
+    color:#ffffff;
+    font-size: 16px;
+    background: #e8491d;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.regBox input[type="submit"]
+{
+    
+    border: none;
+    outline: none;
+    height: 40px;
+    color:#ffffff;
+    font-size: 16px;
+    background: #e8491d;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+
+.loginBox input[type="submit"]:hover
+{
+    background: #fff;
+    color: #000
+}
+
+.regBox input[type="submit"]:hover
+{
+    background: #fff;
+    color: #000
+}
+
+.loginBox a
+{
+    
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    /*padding: 0 105px 0 105px;*/
+    margin-left: 153px;
+ 
+  
+}
+
+
+.regBox a
+{
+    
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    /*padding: 0 105px 0 105px;*/
+    margin-left: 153px;
+ 
+  
+}
+
+.loginBox a:hover
+{
+    color: #e8491d;
+}
+
+.regBox a:hover
+{
+    color: #e8491d;
+}

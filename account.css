@@ -1,0 +1,12 @@
+.tablinks
+{
+	/*background-color: green;*/
+	color: #000;
+	border-radius: 30px;
+}
+
+.tablinks:hover
+{
+	color: blue;
+	background-color: red;
+}
